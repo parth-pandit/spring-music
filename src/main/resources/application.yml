@@ -8,6 +8,8 @@ management:
       exposure:
         include: "*"
 
+server:
+  port: 8080
 ---
 spring:
   profiles: mysql
@@ -15,7 +17,7 @@ spring:
     url: "jdbc:mysql://localhost/music"
     driver-class-name: com.mysql.jdbc.Driver
     username:
-    password: 
+    password:
   jpa:
     properties:
       hibernate:
@@ -28,7 +30,7 @@ spring:
     url: "jdbc:postgresql://localhost/music"
     driver-class-name: org.postgresql.Driver
     username: postgres
-    password: 
+    password:
   jpa:
     properties:
       hibernate:

@@ -2,6 +2,9 @@
 applications:
 - name: spring-music
   memory: 1G
-  random-route: true
+  # random-route: true
+  instances: 2 
   path: build/libs/spring-music-1.0.jar
-
+  # buildpack: https://github.com/cloudfoundry/java-buildpack.git
+  routes:
+  - route: spring-music.apps.lab.panditlabs.online
